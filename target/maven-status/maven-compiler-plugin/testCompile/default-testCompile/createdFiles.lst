@@ -1,0 +1,6 @@
+runner\ConversionRunner.class
+stepdefs\HistoricRatesRegression.class
+utilities\Utils.class
+stepdefs\HistoricRatesTest.class
+stepdefs\LatestRatesRegression.class
+stepdefs\LatestRatesTest.class
