@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: runner.ConversionRunner
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.395 s <<< FAILURE! - in runner.ConversionRunner
-User is redirected to current day rates when tried to view future date rates(Acceptance tests for the Historic Foreign Exchange Rates)  Time elapsed: 0.501 s  <<< FAILURE!
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 6.93 s <<< FAILURE! - in runner.ConversionRunner
+User is redirected to current day rates when tried to view future date rates(Acceptance tests for the Historic Foreign Exchange Rates)  Time elapsed: 0.147 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<2020-0[6-01]> but was:<2020-0[5-29]>
 
-Verify user is able to get specific exchange rate by setting symbols parameter(Regression tests for the Historic Foreign Exchange Rates)  Time elapsed: 0.112 s  <<< FAILURE!
+Verify user is able to get specific exchange rate by setting symbols parameter(Regression tests for the Historic Foreign Exchange Rates)  Time elapsed: 0.116 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<2019-01-1[1]> but was:<2019-01-1[2]>
 
-Verify that rates are displayed as per current date by default(Regression tests for the Latest Foreign Exchange Rates)  Time elapsed: 0.088 s  <<< FAILURE!
+Verify that rates are displayed as per current date by default(Regression tests for the Latest Foreign Exchange Rates)  Time elapsed: 0.073 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<2020-0[5-29]> but was:<2020-0[6-01]>
 

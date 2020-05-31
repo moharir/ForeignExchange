@@ -1,0 +1,1524 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 909000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api for the past conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesTest.theApiForTheConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:20.352Z",
+        "line": 9,
+        "name": "User is able to view conversion rates for historic date",
+        "description": "",
+        "id": "acceptance-tests-for-the-historic-foreign-exchange-rates;user-is-able-to-view-conversion-rates-for-historic-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1832000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters the api with a given date \"2000-01-12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000-01-12\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefs.HistoricRatesTest.userEntersTheApiWithAGivenDate(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate the success status",
+            "match": {
+              "location": "stepdefs.HistoricRatesTest.validateTheSuccessStatus()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@acceptance"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api for the past conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesTest.theApiForTheConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:23.228Z",
+        "line": 13,
+        "name": "User is able to view conversion rates for specific date",
+        "description": "",
+        "id": "acceptance-tests-for-the-historic-foreign-exchange-rates;user-is-able-to-view-conversion-rates-for-specific-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters the api with a given date \"2010-01-12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2010-01-12\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefs.HistoricRatesTest.userEntersTheApiWithAGivenDate(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate the date in the response",
+            "match": {
+              "location": "stepdefs.HistoricRatesTest.validateTheDateInTheResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@acceptance"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api for the past conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesTest.theApiForTheConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:23.401Z",
+        "line": 21,
+        "name": "User is redirected to current day rates when tried to view future date rates",
+        "description": "",
+        "id": "acceptance-tests-for-the-historic-foreign-exchange-rates;user-is-redirected-to-current-day-rates-when-tried-to-view-future-date-rates",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters the api with a given date \"2020-10-12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-10-12\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefs.HistoricRatesTest.userEntersTheApiWithAGivenDate(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c2020-0[6-01]\u003e but was:\u003c2020-0[5-29]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefs.HistoricRatesTest.validateTheDateInTheResponse(HistoricRatesTest.java:40)\r\n\tat ✽.validate the date in the response(file:///E:/ForeignExchange/resources/Features/acceptance/HistoricRates.feature:23)\r\n",
+              "duration": 5000000,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "validate the date in the response",
+            "match": {
+              "location": "stepdefs.HistoricRatesTest.validateTheDateInTheResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@acceptance"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance tests for the Historic Foreign Exchange Rates",
+    "description": "  Purpose of these tests is to cover the acceptance cases\n  Conversion API: https://ratesapi.io/documentation/",
+    "id": "acceptance-tests-for-the-historic-foreign-exchange-rates",
+    "keyword": "Feature",
+    "uri": "file:resources/Features/acceptance/HistoricRates.feature",
+    "tags": [
+      {
+        "name": "@acceptance",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api for the latest conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.theApiForTheConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:23.529Z",
+        "line": 9,
+        "name": "User is able to view current day rates",
+        "description": "",
+        "id": "acceptance-tests-for-the-latest-foreign-exchange-rates;user-is-able-to-view-current-day-rates",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters the api",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.userEntersTheApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate the success status code",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.validateTheSuccessStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@acceptance"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api for the latest conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.theApiForTheConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:23.618Z",
+        "line": 13,
+        "name": "User is able to view latest day rates",
+        "description": "",
+        "id": "acceptance-tests-for-the-latest-foreign-exchange-rates;user-is-able-to-view-latest-day-rates",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters the api",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.userEntersTheApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate the response",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.validateTheResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@acceptance"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api for the latest conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.theApiForTheConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:23.690Z",
+        "line": 17,
+        "name": "User sees proper error message when entered invalid API",
+        "description": "",
+        "id": "acceptance-tests-for-the-latest-foreign-exchange-rates;user-sees-proper-error-message-when-entered-invalid-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 320000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters the invalid api",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.userEntersTheInvalidApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should see the appropriate error message",
+            "match": {
+              "location": "stepdefs.LatestRatesTest.userShouldSeeTheAppropriateErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@acceptance"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance tests for the Latest Foreign Exchange Rates",
+    "description": "  Purpose of these tests is to cover the acceptance cases\n  Conversion API: https://ratesapi.io/documentation/",
+    "id": "acceptance-tests-for-the-latest-foreign-exchange-rates",
+    "keyword": "Feature",
+    "uri": "file:resources/Features/acceptance/LatestRates.feature",
+    "tags": [
+      {
+        "name": "@acceptance",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the historic conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.theApiForTheHistoricConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.029Z",
+        "line": 9,
+        "name": "Verify proper error is displayed when user tries to get the rates for year less than 1999",
+        "description": "",
+        "id": "regression-tests-for-the-historic-foreign-exchange-rates;verify-proper-error-is-displayed-when-user-tries-to-get-the-rates-for-year-less-than-1999",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I call the historic rates API for date \"1999-01-03\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1999-01-03\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCallTheHistoricRatesAPI(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I check the error response",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheErrorResponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I validate the error message",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.iValidateTheErrorMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the historic conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.theApiForTheHistoricConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.376Z",
+        "line": 15,
+        "name": "Verify user is able to get specific exchange rate by setting symbols parameter",
+        "description": "",
+        "id": "regression-tests-for-the-historic-foreign-exchange-rates;verify-user-is-able-to-get-specific-exchange-rate-by-setting-symbols-parameter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I call the historic rates API for date \"2019-01-12\" with \"symbols\" as \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-01-12\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"symbols\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 70
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCallTheHistoricRatesAPIWithBaseAsAndSymbolsAs(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I check the response",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheResponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c2019-01-1[1]\u003e but was:\u003c2019-01-1[2]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefs.HistoricRatesRegression.iCheckTheResponse(HistoricRatesRegression.java:53)\r\n\tat ✽.I validate the date as \"2019-01-12\" and symbol as \"USD\"(file:///E:/ForeignExchange/resources/Features/regression/HistoricRatesRegresion.feature:18)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "I validate the date as \"2019-01-12\" and symbol as \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-01-12\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheResponse(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the historic conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.theApiForTheHistoricConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.495Z",
+        "line": 20,
+        "name": "Verify user is able to get specific exchange rate by setting multiple symbols parameter",
+        "description": "",
+        "id": "regression-tests-for-the-historic-foreign-exchange-rates;verify-user-is-able-to-get-specific-exchange-rate-by-setting-multiple-symbols-parameter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I call the historic rates API for date \"2007-01-12\" with \"symbols\" as \"USD,GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2007-01-12\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"symbols\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"USD,GBP\"",
+                  "offset": 70
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCallTheHistoricRatesAPIWithBaseAsAndSymbolsAs(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I check the response",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheResponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I validate the date as \"2007-01-12\" and symbol as \"USD,GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2007-01-12\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"USD,GBP\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheResponse(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the historic conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.theApiForTheHistoricConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.576Z",
+        "line": 25,
+        "name": "Verify user is able to get Specific date Foreign Exchange Rates with Base",
+        "description": "",
+        "id": "regression-tests-for-the-historic-foreign-exchange-rates;verify-user-is-able-to-get-specific-date-foreign-exchange-rates-with-base",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I call the historic rates API for date \"2007-01-12\" with \"base\" as \"GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2007-01-12\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"base\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"GBP\"",
+                  "offset": 67
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCallTheHistoricRatesAPIWithBaseAsAndSymbolsAs(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I check the response",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheResponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I validate the base as \"GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GBP\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iValidateTheBaseAs(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the historic conversion rates",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.theApiForTheHistoricConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.642Z",
+        "line": 30,
+        "name": "Verify user is able to get Specific date Foreign Exchange Rates with Symbols and Base",
+        "description": "",
+        "id": "regression-tests-for-the-historic-foreign-exchange-rates;verify-user-is-able-to-get-specific-date-foreign-exchange-rates-with-symbols-and-base",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I call the historic rates API for date \"2010-01-12\" with base as \"INR\" and symbols as \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2010-01-12\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"INR\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 86
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iCallTheHistoricRatesAPIForDateWithBaseAsAndSymbolsAs(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I check the response",
+            "match": {
+              "location": "stepdefs.HistoricRatesRegression.iCheckTheResponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I validate the base as \"INR\" and symbols as \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"INR\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepdefs.HistoricRatesRegression.iValidateTheBaseAsAndSymbolsAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Regression tests for the Historic Foreign Exchange Rates",
+    "description": "  Purpose of these tests is to cover the regression cases\n  Conversion API: https://ratesapi.io/documentation/",
+    "id": "regression-tests-for-the-historic-foreign-exchange-rates",
+    "keyword": "Feature",
+    "uri": "file:resources/Features/regression/HistoricRatesRegresion.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.711Z",
+        "line": 9,
+        "name": "Verify that rates are quoted against the EURO by default",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-that-rates-are-quoted-against-the-euro-by-default",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I call the latest rates API",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I get the response",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iGetTheReponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I validate the base should be \"EURO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EURO\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iValidateTheBaseShouldBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.788Z",
+        "line": 14,
+        "name": "Verify that rates are displayed as per current date by default",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-that-rates-are-displayed-as-per-current-date-by-default",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I call the latest rates API",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I get the response",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iGetTheReponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c2020-0[5-29]\u003e but was:\u003c2020-0[6-01]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefs.LatestRatesRegression.iValidateTheDateShouldBeCurrent(LatestRatesRegression.java:47)\r\n\tat ✽.I validate the date should be current(file:///E:/ForeignExchange/resources/Features/regression/LatestRatesRegression.feature:17)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I validate the date should be current",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iValidateTheDateShouldBeCurrent()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.860Z",
+        "line": 19,
+        "name": "Verify user is able to get specific exchange rates by setting the symbols parameter in the request.",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-user-is-able-to-get-specific-exchange-rates-by-setting-the-symbols-parameter-in-the-request.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I call the latest rates API with \"symbols\" as \"INR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"symbols\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"INR\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPIWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I get the response",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iGetTheReponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I validate the symbol should be \"INR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"INR\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iValidateTheSymbolShouldBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:24.925Z",
+        "line": 24,
+        "name": "Verify user is able to get specific exchange rates by setting the multiple symbols in the request.",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-user-is-able-to-get-specific-exchange-rates-by-setting-the-multiple-symbols-in-the-request.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I call the latest rates API with \"symbols\" as \"INR,USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"symbols\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"INR,USD\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPIWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I get the response",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iGetTheReponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I validate the symbol should be \"INR,USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"INR,USD\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iValidateTheSymbolShouldBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:25.016Z",
+        "line": 29,
+        "name": "Verify user is able to quote against different currency by setting base parameter in the request",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-user-is-able-to-quote-against-different-currency-by-setting-base-parameter-in-the-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I call the latest rates API with \"base\" as \"GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"GBP\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPIWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I get the response",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iGetTheReponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I validate the base should be \"GBP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GBP\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iValidateTheBaseShouldBe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:25.146Z",
+        "line": 34,
+        "name": "Verify proper error is displayed when user tries to get the rates with two base values",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-proper-error-is-displayed-when-user-tries-to-get-the-rates-with-two-base-values",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 331000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I call the latest rates API with \"base\" as \"GBP,INR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"GBP,INR\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPIWith(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I check the error code",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iCheckTheErrorCode()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I validate error message \"GBP,INR\" for \"base\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GBP,INR\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"base\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iValidateErrorMessageFor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User has the APIs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The api for the current conversion rates",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.theAPIForTheCurrentConversionRates()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-31T20:39:25.489Z",
+        "line": 39,
+        "name": "Verify uer is able to get specific exchange rates by setting base and symbols parameter in the request",
+        "description": "",
+        "id": "regression-tests-for-the-latest-foreign-exchange-rates;verify-uer-is-able-to-get-specific-exchange-rates-by-setting-base-and-symbols-parameter-in-the-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I call the latest rates API with base as \"GBP\" and symbols as \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GBP\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iCallTheLatestRatesAPIWithBaseAsAndSymbolsAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I get the response",
+            "match": {
+              "location": "stepdefs.LatestRatesRegression.iGetTheReponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I validate base as \"GBP\" and symbols as \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GBP\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.LatestRatesRegression.iValidateAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Regression tests for the Latest Foreign Exchange Rates",
+    "description": "  Purpose of these tests is to cover the regression cases\n  Conversion API: https://ratesapi.io/documentation/",
+    "id": "regression-tests-for-the-latest-foreign-exchange-rates",
+    "keyword": "Feature",
+    "uri": "file:resources/Features/regression/LatestRatesRegression.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
