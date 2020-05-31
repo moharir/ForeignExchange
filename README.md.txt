@@ -21,8 +21,8 @@ Setup Instructions:
    c) Can run the individual features or scenarios by right clicking on the same. [Report won't be generated]
 5. Reports:
    a) Run the command to see the well formattedreport: mvn cluecumber-report:reporting
-      @ Cluecumber Reports: target/generated-report
-   b) Cucumber reports: target/cucumber-report
+      @ Cluecumber Reports: target/generated-report/index.html
+   b) Cucumber reports: target/cucumber-report/cucumber.html
    c) Junit Reports: target/surefire-reports
 
 FYI, Manual Test Cases Sheet Can be found at the root directory.
